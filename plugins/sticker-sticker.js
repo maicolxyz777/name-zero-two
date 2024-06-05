@@ -44,9 +44,9 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
   }
 user.lastmiming = new Date * 1
 }
-handler.help = ['sticker']
+handler.help = ['ملصق']
 handler.tags = ['sticker']
-handler.command = ['s', 'sticker', 'stiker'] 
+handler.command = ['s', 'ملصق', 's'] 
 
 export default handler
 
