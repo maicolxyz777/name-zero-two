@@ -42,7 +42,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
   }
 };
 
-handler.command = /^(تطبيق|apk|apkdl)$/i;
+handler.command = /^(ttb|apk|apkdl)$/i;
 handler.register = true;
 handler.limit = 2;
 export default handler;
