@@ -4,9 +4,9 @@ fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/kpop
 let randomkpop = body.split('\n')
 let randomkpopx = randomkpop[Math.floor(Math.random() * randomkpop.length)]
 //conn.sendFile(m.chat, randomkpopx, 'error.jpg', `_${command}_`, m)
-conn.sendButton(m.chat, `_${command}_`, wm, randomkpopx, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], null, null, m)
+conn.sendButton(m.chat, `_${command}_`, wm, randomkpopx, [['التالي | 🆕', `/${command}`]], null, null, m)
 })}
-handler.help = ['blackpink']
+handler.help = ['عشوائي']
 handler.tags = ['internet']
-handler.command = /^(blackpink)$/i
+handler.command = /^(عشوائي)$/i
 export default handler
