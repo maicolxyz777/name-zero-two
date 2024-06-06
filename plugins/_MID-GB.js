@@ -5,9 +5,9 @@ handler.before = async function (m, { conn }) {
 let idioma  = global.db.data.users[m.sender].midLanguage
 let MID_GB
   
-if (idioma == "es") {
+if (idioma == "ar") {
 MID_GB = es
-} else if (idioma == "en") {
+} else if (idioma == "ar") {
 MID_GB = en
 } else {
 MID_GB = mid || es
