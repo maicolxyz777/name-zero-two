@@ -99,7 +99,7 @@ let menu = `
 ⎔ *${lenguajeGB['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_ ${(conn.user.jid == global.conn.user.jid ? '' : `\n⎔ *SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 ✨ *◜INFORMACIÓN DEL USUARIO◞* ✨
-⊜ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo 🗂️' : 'Registro Rápido 📑'}_` : '❌ _Sin registro_'}
+⊜ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'التسجيل الكامل 🗂️' : 'التسجيل السريع 📑'}_` : '❌ _Sin registro_'}
 ⊜ *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
 ⊜ *Registrado »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
 ⊜ *${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
@@ -113,7 +113,7 @@ let menu = `
 ⊜ *Tokens ➟* ${joincount} 🪙`.trim()
       
 const buttonParamsJson = JSON.stringify({
-title: "VER LISTA",
+title: "اضغط هنا للاختيار",
 description: "التقارير الرسميه عن بوت لوسيفار",
 sections: [
 { title: "ℹ️ معلومه", highlight_label: "Popular",
@@ -124,14 +124,14 @@ rows: [
 ]},
 { title: "🔖 اختصارات", highlight_label: "Popular",
 rows: [
-{ header: "🆕 تكوين بوت خاصبك (código)", title: "🔓 الكل", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
-{ header: "🤖 Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
-{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
-{ header: "😺 Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra GataBot", id: usedPrefix + "estado" }
+{ header: "🆕 تكوين بوت خاصبك (código)", title: "🔓 الكل", description: "¡كن بوت مع طريقة رمز 8 -digit!", id: usedPrefix + "serbot --code" },
+{ header: "🤖 للتكوين عبر (qr)", title: "🔓 عام", description: "شكل Standar من كونك بوت مع رمز الاستجابة السريعة", id: usedPrefix + "serbot" },
+{ header: "🚄 سرعه البوت", title: "🔓 عام", description: "هذا إذا كنت تريد معرفة ping من الروبوت", id: usedPrefix + "ping" },
+{ header: "😺 ولايه", title: "🔓 عام", description: "مكان اقامه صانع البوت", id: usedPrefix + "estado" }
 ]},
-{ title: "Ⓜ️ Menú", highlight_label: "Popular",
+{ title: "Ⓜ️ الاوامر", highlight_label: "Popular",
 rows: [
-{ header: "⭐ Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "allmenu" }
+{ header: "⭐ جميع الاوامر", title: "", description: "قم بزياره جميع الاوامر", id: usedPrefix + "allmenu" }
 ]}
 ]})
 const interactiveMessage = {
