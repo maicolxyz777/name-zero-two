@@ -575,7 +575,7 @@ ${user.registroC === true ? `☘️ *الجنس*
 ❇️ *هوايه(S)*
 ❱❱ ${user.pasatiempo}\n
 ${user.premLimit === 1 ? '' : `🎟️ *غالي*
-❱❱ ${user.premLimit === 1 ? '' : `${user.premiumTime > 0 ? '✅' : '❌'} +10 HORAS || ${user.premiumTime - now} ms`}`}   ` : ''}${user.registroC === true ? `\n🌟 *Si es su primera vez registrándose, recibirá horas premium de forma gratuita como bonificación exclusiva por su primera inscripción, puede cancelar y eliminar su registro en cualquier momento. Gracias por registrarse ✨*` : ''}`.trim(),
+❱❱ ${user.premLimit === 1 ? '' : `${user.premiumTime > 0 ? '✅' : '❌'} +10 HORAS || ${user.premiumTime - now} ms`}`}   ` : ''}${user.registroC === true ? `\n🌟 *إذا كانت هذه هي المرة الأولى التي تسجل فيها, recibirá horas premium de forma gratuita como bonificación exclusiva por su primera inscripción, puede cancelar y eliminar su registro en cualquier momento. شكرا لتسجيلك ✨*` : ''}`.trim(),
 contextInfo: {
 externalAdReply: {
 title: wm,
@@ -588,7 +588,7 @@ renderLargerThumbnail: true
 }}}, { quoted: fkontak })
 await m.reply(`${sn}`)	
 }}
-handler.command = ['finalizar', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'finalizar', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|finalizar|reg(ister)?)$/i
+handler.command = ['تسجيل', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'تسجيل', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|finalizar|reg(ister)?)$/i
 export default handler
 
 function pickRandom(list) { 
