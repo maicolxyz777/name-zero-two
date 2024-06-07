@@ -550,31 +550,31 @@ let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)
 registrando = false
 clearInterval(intervalId)	
 await conn.sendMessage(m.chat, {
-text: `🍃 \`\`\`VERIFICACIÓN EXITOSA\`\`\` 🍃
+text: `🍃 \`\`\`التحقيق الناجح\`\`\` 🍃
 *- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n
-😼 *REGISTRADO POR*
+😼 *مسجل بواسطه*
 ❱❱ ${wm}\n
-📑 *TIPO DE REGISTRO* 
-❱❱ ${user.registroC === true ? 'REGISTRO COMPLETO' : 'REGISTRO RÁPIDO'}\n
-⌛ *FECHA/HORA*
+📑 *نوع التسجيل* 
+❱❱ ${user.registroC === true ? 'التسجيل الكامل' : 'سجل سريع'}\n
+⌛ *التاريخ/الساعه*
 ❱❱ ${user.tiempo}\n
-🛅 *CÓDIGO DE REGISTRO*
+🛅 *رمز التسجيل*
 ❱❱ ${sn}\n
-✅ *INSIGNIA DE VERIFICACIÓN*
+✅ *الحقوق*
 ❱❱   *${user.registered === true ? 'ͧͧͧͦꙶͣͤ✓ᚲᴳᴮ' : ''}*\n
-✨ *NOMBRE* 
+✨ *الاسم* 
 ❱❱ ${user.name}\n
-👀 *DESCRIPCIÓN*
+👀 *الوصف*
 ❱❱ ${user.descripcion}\n
-🔢 *EDAD* 
+🔢 *العمر* 
 ❱❱ ${user.age}\n
-${user.registroC === true ? `☘️ *GÉNERO*
+${user.registroC === true ? `☘️ *الجنس*
 ❱❱ ${user.genero}\n
-🌱 *ORIENTACIÓN SEXUAL*
+🌱 *التوجيه*
 ❱❱ ${user.identidad}\n
-❇️ *PASATIEMPO(S)*
+❇️ *هوايه(S)*
 ❱❱ ${user.pasatiempo}\n
-${user.premLimit === 1 ? '' : `🎟️ *PREMIUM*
+${user.premLimit === 1 ? '' : `🎟️ *غالي*
 ❱❱ ${user.premLimit === 1 ? '' : `${user.premiumTime > 0 ? '✅' : '❌'} +10 HORAS || ${user.premiumTime - now} ms`}`}   ` : ''}${user.registroC === true ? `\n🌟 *Si es su primera vez registrándose, recibirá horas premium de forma gratuita como bonificación exclusiva por su primera inscripción, puede cancelar y eliminar su registro en cualquier momento. Gracias por registrarse ✨*` : ''}`.trim(),
 contextInfo: {
 externalAdReply: {
