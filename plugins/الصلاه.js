@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { randomBytes } from 'crypto';
-
+return conn.sendMessage(m.chat,{ image :{ url : "https://telegra.ph/file/c03ea71e665b019c53d33.jpg" }
 const countryInfo = {
     'مصر': { capital: 'القاهرة', code: 'EG', emoji: '🇪🇬' },
     'السعودية': { capital: 'الرياض', code: 'SA', emoji: '🇸🇦' },
