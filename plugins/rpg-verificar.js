@@ -588,7 +588,7 @@ renderLargerThumbnail: true
 }}}, { quoted: fkontak })
 await m.reply(`${sn}`)	
 }}
-handler.command = ['finalizar', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'finalizar', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|تسجيل|reg(ister)?)$/i
+handler.command = ['finalizar', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'تسجيل', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|تسجيل|reg(ister)?)$/i
 export default handler
 
 function pickRandom(list) { 
