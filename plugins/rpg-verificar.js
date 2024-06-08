@@ -581,14 +581,14 @@ externalAdReply: {
 title: wm,
 body: user.name,
 thumbnailUrl: pp, 
-sourceUrl: 'https://www.atom.bio/gatabot/',
+sourceUrl: 'https://wa.me/+967735339177',
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, { quoted: fkontak })
 await m.reply(`${sn}`)	
 }}
-handler.command = ['finalizar', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'finalizar', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|finalizar|reg(ister)?)$/i
+handler.command = ['finalizar', 'verificar', 'register', 'registrar', 'reg', 'reg1', 'nombre', 'name', 'nombre2', 'name2', 'edad', 'age', 'edad2', 'age2', 'genero', 'género', 'gender', 'identidad', 'pasatiempo', 'hobby', 'identity', 'finalizar', 'pas2', 'pas3', 'pas4', 'pas5']  ///^(finalizar|تسجيل|reg(ister)?)$/i
 export default handler
 
 function pickRandom(list) { 
