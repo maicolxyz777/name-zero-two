@@ -88,7 +88,7 @@ const handler = async (m, { conn, text }) => {
               },              
               {
                 name: "cta_url",
-                buttonParamsJson: '{"display_text":"قـنـاتـنـا 🦇","url":"https://whatsapp.com/channel/0029VacQnLG6WaKulhudf01i","merchant_url":"https://whatsapp.com/channel/0029VacQnLG6WaKulhudf01i"}'
+                buttonParamsJson: '{"display_text":"قـنـاتـنـا 🦇","url":"https://whatsapp.com/channel/0029VacZNxJLI8YU3b6Qt11L","merchant_url":"https://whatsapp.com/channel/0029VacZNxJLI8YU3b6Qt11L"}'
               }, 
             ]
           }
