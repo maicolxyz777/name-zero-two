@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     const response = `${eg}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💫 ${mid.name}: ${apkData.name}
-┃📦 𝙋𝘼𝘾𝙆𝘼𝙂𝙀: ${apkData.package}
+┃📦 رابط التطبيق: ${apkData.package}
 ┃🕒 ${mid.smsApk2}: ${apkData.lastup}
 ┃💪 ${mid.smsYT11} ${apkData.size}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
