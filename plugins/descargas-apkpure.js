@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     const response = `${eg}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💫 ${mid.name}: ${apkData.name}
-┃📦 رابط التطبيق: ${apkData.package}
+┃📦 𝙋𝘼𝘾𝙆𝘼𝙂𝙀: ${apkData.package}
 ┃🕒 ${mid.smsApk2}: ${apkData.lastup}
 ┃💪 ${mid.smsYT11} ${apkData.size}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -42,7 +42,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
   }
 };
 
-handler.command = /^(apkp|apk|apkdl)$/i;
+handler.command = /^(apkp|apkpure|apkdl)$/i;
 handler.register = true;
 handler.limit = 2;
 export default handler;
