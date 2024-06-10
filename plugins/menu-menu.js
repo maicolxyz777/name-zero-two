@@ -151,7 +151,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 
 ${margen}
 
-> 🌟 *INFORMACIÓN GENERAL* 🌟 
+> 🌟 *معلومات عامة* 🌟 
 
 *❰❰ ${lenguajeGB['smsTotalUsers']()} ❱❱* 
 ➺ \`\`\`${Object.keys(global.db.data.users).length}\`\`\`
@@ -176,7 +176,7 @@ ${margen}
 
 ${margen}
 
-> ✨ *INFORMACIÓN DEL USUARIO* ✨
+> ✨ *معلومات المستخدم* ✨
 
 *❰❰ Tipo de registro ❱❱*
 ➺ ${user.registered === true ? `_${user.registroC === true ? '🗂️ Registro Completo' : '📑 Registro Rápido'}_` : '❌ _Sin registro_'}
@@ -204,55 +204,55 @@ ${margen}
 
 ${margen}
 
-> 💫 *INFORMACIÓN* 💫\n
+> 💫 *المعلومات* 💫\n
 ${generateCommand(commandsInfo, usedPrefix)}
 
 ${margen}
 
-> 💻 *COMANDOS - SUB BOT*\n
+> 💻 *الأوامر - الروبوت الفرعي*\n
 ${generateCommand(commandsJadiBot, usedPrefix)}
 
 ${margen}
 
-> 🆘 *REPORTAR COMANDOS* 🆘\n
+> 🆘 *أوامر التقرير* 🆘\n
 ${generateCommand(commandsReport, usedPrefix)}
 
 ${margen}
 
-> 🪅 *GATABOT TEMPORAL* 🪅\n
+> 🪅 *اوامر مؤقتة* 🪅\n
 ${generateCommand(commandsLink, usedPrefix)}
 
 ${margen}
 
-> 🎟️ *SER PREMIUM* 🎟️\n
+> 🎟️ *البريوم* 🎟️\n
 ${generateCommand(commandsPrem, usedPrefix)}
 
 ${margen}
 
-> 🎡 *JUEGOS* 🎡\n
+> 🎡 *الالعاب* 🎡\n
 ${generateCommand(commandsGames, usedPrefix)}
 
 ${margen}
 
-> ✨ *IA* ✨\n
+> ✨ *الذكاء* ✨\n
 ${generateCommand(commandsAI, usedPrefix)}
 
 ${margen}
 
-> ⚙️ *AJUSTES* ⚙️
-${m.isGroup ? `_✅ ➤ Activado_
+> ⚙️ *اعدادت-خاص للمالك* ⚙️
+${m.isGroup ? `_✅ ➤ مفعل_
 _❌ ➤ Desactivado_` : `Para ver la configuración completa sólo use: *${usedPrefix}on* o *${usedPrefix}off*`}\n
 ${generateCommand(commandsConfig, usedPrefix).replace(/≡/g, '𖡡')}
 
 ${margen}
 
-> 🧾 *AJUSTES/INFO - GRUPO* 🧾
+> 🧾 *الإعدادات/المعلومات - المجموعة* 🧾
 
 ✓ _${usedPrefix}configuracion_
 ✓ _${usedPrefix}settings_
 ✓ _${usedPrefix}vergrupo_
 
-> 🪄 *DESCARGAS* 🪄
+> 🪄 *التحميلات* 🪄
 
 ✓ _${usedPrefix}imagen | image *texto*_
 ✓ _${usedPrefix}pinterest | dlpinterest *texto*_
@@ -282,7 +282,7 @@ ${margen}
 ✓ _${usedPrefix}fraseromantica_
 ✓ _${usedPrefix}historia_
 ✓ _${usedPrefix}drive | dldrive *link*_
-> 👤 *CHAT ANONIMO* 👤
+> 👤 *دردشة مجهولة* 👤
 
 ✓ _${usedPrefix}chatanonimo | anonimochat_
 ✓ _${usedPrefix}anonimoch_
@@ -290,7 +290,7 @@ ${margen}
 ✓ _${usedPrefix}next_
 ✓ _${usedPrefix}leave_
 
-> 🌐 *COMANDOS PARA GRUPOS* 🌐
+> 🌐 *أوامر للمجموعة* 🌐
 
 ✓ _${usedPrefix}add *numero*_
 ✓ _${usedPrefix}mute | unmute *@tag*_
@@ -326,7 +326,7 @@ ${margen}
 ✓ _${usedPrefix}on_
 ✓ _${usedPrefix}off_
 
-> 💞 *PAREJAS* 💞
+> 💞 *الأزواج* 💞
 
 ✓ _${usedPrefix}listaparejas | listship_
 ✓ _${usedPrefix}mipareja | mylove_
@@ -335,7 +335,7 @@ ${margen}
 ✓ _${usedPrefix}rechazar | decline *@tag*_
 ✓ _${usedPrefix}terminar | finish *@tag*_
 
-> 📦 *VOTACIONES EN GRUPOS* 📦
+> 📦 *التصويت في المجموعات* 📦
 
 ✓ _${usedPrefix}crearvoto | startvoto *texto*_
 ✓ _${usedPrefix}sivotar | upvote_
@@ -343,11 +343,8 @@ ${margen}
 ✓ _${usedPrefix}vervotos | cekvoto_
 ✓ _${usedPrefix}delvoto | deletevoto_
 
-> 🔞 *CONTENIDO* 🔞
 
-✓ _${usedPrefix}hornymenu_
-
-> 🔁 *CONVERTIDORES* 🔁
+> 🔁 *التحويلات* 🔁
 
 ✓ _${usedPrefix}toimg | img | jpg *sticker*_
 ✓ _${usedPrefix}toanime | jadianime *foto*_
@@ -358,12 +355,12 @@ ${margen}
 ✓ _${usedPrefix}toenlace  *video, imagen o audio*_
 ✓ _${usedPrefix}tts es *texto*_
 
-> 🔆 *LOGOS* 🔆
+> 🔆 *الاشعارات* 🔆
 
 ✓ _${usedPrefix}logos *efecto texto*_
 ✓ _${usedPrefix}menulogos2_
 
-> 💥 *EFECTOS* 💥
+> 💥 *تأثيرات* 💥
 
 ✓ _${usedPrefix}simpcard *@tag*_
 ✓ _${usedPrefix}hornycard *@tag*_
@@ -373,7 +370,7 @@ ${margen}
 ✓ _${usedPrefix}pixelar_
 ✓ _${usedPrefix}blur_
 
-> 🍭 *RANDOM/ANIME* 🍭
+> 🍭 *عشوائي / أنيمي* 🍭
 
 ✓ _${usedPrefix}chica_
 ✓ _${usedPrefix}chico_
@@ -426,7 +423,7 @@ ${margen}
 ✓ _${usedPrefix}sakura_
 ✓ _${usedPrefix}cosplay_
 
-> 🎙️ *EFECTO DE AUDIO* 🎙️
+> 🎙️ *تأثير الصوت* 🎙️
 
 ✓ _${usedPrefix}bass_
 ✓ _${usedPrefix}blown_
@@ -441,7 +438,7 @@ ${margen}
 ✓ _${usedPrefix}smooth_
 ✓ _${usedPrefix}tupai_
 
-> 🔍 *BÚSQUEDAS* 🔍
+> 🔍 *عمليات البحث* 🔍
 
 ✓ _${usedPrefix}animeinfo *texto*_
 ✓ _${usedPrefix}mangainfo *texto*_
@@ -451,11 +448,11 @@ ${margen}
 ✓ _${usedPrefix}ytsearch | yts *texto*_
 ✓ _${usedPrefix}wiki | wikipedia *texto*_
 
-> 🔊 *AUDIOS* 🔊
+> 🔊 *صوتيات* 🔊
 
 ✓ _${usedPrefix}audios_
 
-> 🛠️ *HERRAMIENTAS* 🛠️
+> 🛠️ *أدوات* 🛠️
 
 ✓ _${usedPrefix}afk *motivo*_
 ✓ _${usedPrefix}acortar *url*_
@@ -471,7 +468,7 @@ ${margen}
 ✓ _${usedPrefix}encuesta | poll *Motivo*_
 ✓ _${usedPrefix}horario_
 
-> ⚗️ *COMANDOS RPG* ⚗️
+> ⚗️ *أوامر آر بي جي* ⚗️
 
 ✓ _${usedPrefix}botemporal *enlace* *cantidad*_
 ✓ _${usedPrefix}addbot *enlace* *cantidad*_
@@ -513,7 +510,7 @@ ${margen}
 ✓ _${usedPrefix}cofre | abrircofre | coffer_
 ✓ _${usedPrefix}trabajar | work_
 
-> 🌟 *RPG Fnatasy* 🌟
+> 🌟 *آر بي جي فناتاسي* 🌟
 
 ✓ _${usedPrefix}fantasy | fy_
 ✓ _c_
@@ -525,15 +522,15 @@ ${margen}
 ✓ _${usedPrefix}fantasymy | fymy_
 ✓ _${usedPrefix}fyentregar | fytransfer_
 
-> 🏆 *TOP en RPG Fnatasy* 🏆
+> 🏆 *أعلى لعبة RPG Fnatasy* 🏆
 
 ✓ _${usedPrefix}fytendencia | fyranking_
 
-> 🏆 *TOP en GATABOT* 🏆
+> 🏆 *توب لوسيفار* 🏆
 
 ✓ _${usedPrefix}top | lb | leaderboard_
 
-> 🎭 *FILTROS EN STICKERS* 🎭
+> 🎭 *المرشحات على الملصقات* 🎭
 
 ✓ _${usedPrefix}sticker | s *imagen o video*_
 ✓ _${usedPrefix}sticker | s *url de tipo jpg*_
@@ -566,7 +563,7 @@ ${margen}
 ✓ _${usedPrefix}besar | kiss *@tag*_
 ✓ _${usedPrefix}alimentar | food *@tag*_
 
-> 💎 *PARA MI CREADOR/A* 💎
+> 💎 *من اجلي* 💎
 
 ✓ _${usedPrefix}join *enlace*_
 ✓ _${usedPrefix}unete *enlace*_
@@ -608,7 +605,7 @@ console.log(e)}
 }
 
 //handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|menucompleto|allmenu|allm|m|\?)$/i
-handler.command = /^(menucompleto|allmenu|\?)$/i
+handler.command = /^(menu|الاوامر|\?)$/i
 handler.register = true
 export default handler
 
