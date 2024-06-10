@@ -159,7 +159,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ⎔ *${lenguajeGB['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_ ${(conn.user.jid == global.conn.user.jid ? '' : `\n⎔ *SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 ✨ *◜معلومات المستخدم◞* ✨
-⊜ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo 🗂️' : 'Registro Rápido 📑'}_` : '❌ _Sin registro_'}
+⊜ *نوع التسجيل »* ${user.registered === true ? `_${user.registroC === true ? 'التسجيل الكامل 🗂️' : 'التسجيل السريع 📑'}_` : '❌ _Sin registro_'}
 ⊜ *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
 ⊜ *Registrado »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
 ⊜ *${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
@@ -177,7 +177,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃Ⓜ️ _*قائمه كامله*_ Ⓜ️
 ┃➺ _${usedPrefix}menucompleto | allmenu_
 ┃
-┃🔊 _*MENÚ DE AUDIOS*_ 🔊
+┃🔊 _*قائمة الصوت*_ 🔊
 ┃➺ _${usedPrefix}menuaudio | menuaudios_
 ┃
 ┃💫 _${lenguajeGB['smsTex13']()}_ 💫
@@ -228,7 +228,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃💎 _${lenguajeGB['smsTex20']()}_ 💎
 ┃➺ _${usedPrefix}ownermenu_
 ┃
-┃✅ *_CUENTAS OFICIALES GATABOT_* ✅
+┃✅ *_حسابات لوسيفار_* ✅
 ┃➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃
 *╰━━━━━━━━━━━━━⬣*`.trim()
